@@ -1,8 +1,6 @@
 package com.perla.curso.alurachallenge.models;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public enum Idioma {
 
@@ -26,14 +24,14 @@ public enum Idioma {
         throw new IllegalArgumentException("Idioma no encontrado: " + iniciales);
     }
 
-    public static Idioma obtenerIdiomaPorIniciales(String iniciales) {
-        for (Idioma idioma : values()) {
-            if (idioma.iniciales.equalsIgnoreCase(iniciales)) {
-                return idioma;
-            }
-        }
-        throw new IllegalArgumentException("Idioma no encontrado: " + iniciales);
-    }
+//    public static Idioma obtenerIdiomaPorIniciales(String iniciales) {
+//        for (Idioma idioma : values()) {
+//            if (idioma.iniciales.equalsIgnoreCase(iniciales)) {
+//                return idioma;
+//            }
+//        }
+//        throw new IllegalArgumentException("Idioma no encontrado: " + iniciales);
+//    }
 
     public static String[] opcionesDeIdiomas() {
         return Arrays.stream(values())
